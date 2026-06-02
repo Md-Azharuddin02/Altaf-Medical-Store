@@ -1,0 +1,16 @@
+import { site } from '@/lib/site';
+
+export default function manifest() {
+  return {
+    name: site.name,
+    short_name: site.shortName,
+    description: site.description,
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#0d9488',
+    icons: [
+      { src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
+    ],
+  };
+}
